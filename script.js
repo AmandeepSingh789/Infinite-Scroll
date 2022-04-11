@@ -8,7 +8,7 @@ let photosArray = [];
 
 const apiKey = "m730i1pNJ7wdGAC6u7pSD0hzt8WbJ_Jv2EmMmf82-uc";
 const count = 30;
-const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=dogs`;
+const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=dogs&orientation=landscape`;
 
 //https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&orientation=landscape
 
