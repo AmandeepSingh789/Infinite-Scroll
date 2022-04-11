@@ -8,7 +8,7 @@ let photosArray = [];
 
 const apiKey = "m730i1pNJ7wdGAC6u7pSD0hzt8WbJ_Jv2EmMmf82-uc";
 const count = 30;
-const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}`;
+const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=dogs`;
 
 //https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&orientation=landscape
 
@@ -45,9 +45,12 @@ function displayPhotos() {
     //create<img>
     //alt way of setting attributes
     const img = document.createElement("img");
-    img.setAttribute("src", photo.urls.regular);
-    img.setAttribute("alt", photo.alt_description);
-    img.setAttribute("title", photo.alt_description);
+    setAttributes(img, {
+        src: photo.urls.regular,
+        alt: photo.alt_description,
+        title: photo.alt_description,
+      });
+      console.log(photo);
     img.addEventListener('load', imageLoaded);
 
     //put img inside anchor element, put both inside container
