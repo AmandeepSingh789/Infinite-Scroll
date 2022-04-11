@@ -19,7 +19,11 @@ h1{
   margin-bottom: 15px;
   font-size: 50px;
   letter-spacing: 5px;
-  color:white;
+  color:rgb(82, 2, 78);
+  border: 2px solid;
+  border-radius: 5px;
+  background: rgb(255, 182, 253);
+  opacity: 70%;
 }
 
 /* Loader*/
